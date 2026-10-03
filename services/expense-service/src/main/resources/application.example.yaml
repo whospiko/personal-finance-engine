@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: expense-service
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/expense_db}
+    username: ${JDBC_DATABASE_USERNAME:}
+    password: ${JDBC_DATABASE_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true

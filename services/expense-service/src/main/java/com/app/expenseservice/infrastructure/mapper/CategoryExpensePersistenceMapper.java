@@ -7,21 +7,23 @@ import org.springframework.stereotype.Component;
 @Component
 public class CategoryExpensePersistenceMapper {
 
-    public CategoryExpenseJpaEntity toEntity(CategoryExpense categoryExpense) {
+    public CategoryExpenseJpaEntity toEntity(CategoryExpense domain) {
         CategoryExpenseJpaEntity categoryExpenseJpaEntity = new CategoryExpenseJpaEntity();
-        categoryExpenseJpaEntity.setId(categoryExpense.getId());
-        categoryExpenseJpaEntity.setName(categoryExpense.getName());
-        categoryExpenseJpaEntity.setIcon(categoryExpense.getIcon());
+
+        categoryExpenseJpaEntity.setId(domain.getId());
+        categoryExpenseJpaEntity.setName(domain.getName());
+        categoryExpenseJpaEntity.setIcon(domain.getIcon());
+
         return categoryExpenseJpaEntity;
     }
 
-    public CategoryExpense toDomain(CategoryExpenseJpaEntity categoryExpenseJpaEntity) {
-        CategoryExpense categoryExpense = new CategoryExpense();
-        categoryExpense.setId(categoryExpenseJpaEntity.getId());
-        categoryExpense.setName(categoryExpenseJpaEntity.getName());
-        categoryExpense.setIcon(categoryExpenseJpaEntity.getIcon());
-        categoryExpense.setCreatedAt(categoryExpenseJpaEntity.getCreatedAt());
-        categoryExpense.setUpdatedAt(categoryExpenseJpaEntity.getUpdatedAt());
-        return categoryExpense;
+    public CategoryExpense toDomain(CategoryExpenseJpaEntity entity) {
+        return CategoryExpense.restore(
+                entity.getId(),
+                entity.getName(),
+                entity.getIcon(),
+                entity.getCreatedAt(),
+                entity.getUpdatedAt()
+        );
     }
 }

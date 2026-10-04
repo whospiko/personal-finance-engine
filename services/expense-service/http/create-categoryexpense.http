@@ -1,0 +1,7 @@
+POST http://localhost:8081/api/v1/expenses
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "icon": "test icon"
+}

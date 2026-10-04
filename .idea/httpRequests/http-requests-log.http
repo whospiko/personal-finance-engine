@@ -1,0 +1,55 @@
+POST http://localhost:8081/api/v1/expenses
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "icon": "test icon"
+}
+
+<> 2026-10-04T123944.200.json
+
+###
+POST http://localhost:8081/api/v1/expenses
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "icon": "test icon"
+}
+
+<> 2026-10-04T123926.200.json
+
+###
+POST http://localhost:8081/api/v1/expenses
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "icon": "test icon"
+}
+
+<> 2026-10-04T123817.500.json
+
+###
+POST http://localhost:8081/api/v1/expenses
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "icon": "test icon"
+}
+
+<> 2026-10-04T123409.500.json
+
+###
+POST http://localhost:8081/api/v1/expenses
+Content-Type: application/json
+
+{
+  "name": "test name",
+  "icon": "test icon"
+}
+
+<> 2026-10-04T123326.500.json
+
+###

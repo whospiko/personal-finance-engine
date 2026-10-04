@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1cd35cc9-4e4d-4cda-a8ad-87a2b7c3dcfd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/services/expense-service/http/create-categoryexpense.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/command/CategoryExpenseCreateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/CreateCategoryExpenseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/CreateCategoryExpenseUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/CategoryExpenseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/app/common/entity/BaseEntityId.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/app/common/entity/BaseEntityId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/dto/CategoryExpenseRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/request/CategoryExpenseRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/dto/CategoryExpenseResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/response/CategoryExpenseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/mapper/CategoryExpenseAppMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/mapper/CategoryExpenseAppMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/service/CategoryExpenseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/CategoryExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/CategoryExpense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/CategoryExpensePersistenceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/CategoryExpensePersistenceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/CategoryExpenseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/CategoryExpenseRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/ExpenseController.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="b392b139-cf6f-49ac-82ef-c4b616f8ac58" value="" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+        <option value="HTTP Request" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientOnboardingState"><![CDATA[{
+  "isOnboardingCommentShown": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KDLWfPHZfQmBUi07E7k8gOZpPj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.create-categoryexpense | #1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.ExpenseServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/hengkakada/Project/personal-finance-engine/services/expense-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/expense-service/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="create-categoryexpense | #1" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ExpenseServiceApplication">
+    <configuration name="create-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/create-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ExpenseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="expense-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.expenseservice.ExpenseServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.create-categoryexpense | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cd35cc9-4e4d-4cda-a8ad-87a2b7c3dcfd" name="Changes" comment="" />
+      <created>1791087225080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791087225080</updated>
+      <workItem from="1791087226194" duration="81000" />
+      <workItem from="1791087316878" duration="119000" />
+      <workItem from="1791087438781" duration="9000" />
+      <workItem from="1791087473275" duration="165000" />
+      <workItem from="1791087656083" duration="972000" />
+      <workItem from="1791089501459" duration="85000" />
+      <workItem from="1791089624631" duration="106000" />
+      <workItem from="1791089765050" duration="69000" />
+      <workItem from="1791089865541" duration="320000" />
+      <workItem from="1791090220330" duration="77000" />
+      <workItem from="1791090308835" duration="283000" />
+      <workItem from="1791090626444" duration="172000" />
+      <workItem from="1791090898488" duration="121000" />
+      <workItem from="1791091040858" duration="116000" />
+      <workItem from="1791091174059" duration="1405000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

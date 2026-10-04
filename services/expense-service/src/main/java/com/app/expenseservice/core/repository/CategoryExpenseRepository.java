@@ -5,6 +5,7 @@ import com.app.expenseservice.core.entity.CategoryExpense;
 import java.util.Optional;
 import java.util.UUID;
 
+
 public interface CategoryExpenseRepository {
     CategoryExpense save(CategoryExpense categoryExpense);
     Optional<CategoryExpense> findById(UUID id);

@@ -14,6 +14,5 @@ import java.util.UUID;
 @Setter
 public abstract class BaseEntityId {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 }

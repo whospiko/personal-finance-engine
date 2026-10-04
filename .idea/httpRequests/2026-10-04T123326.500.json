@@ -1,0 +1,7 @@
+{
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "An unexpected error occurred: Row was already updated or deleted by another transaction for entity [com.app.expenseservice.infrastructure.persistence.CategoryExpenseJpaEntity with id 'a5595326-813e-4d04-beed-4de01e28ee6f']",
+  "path": "/api/v1/expenses",
+  "timestamp": "2026-10-04T12:33:26.194836"
+}

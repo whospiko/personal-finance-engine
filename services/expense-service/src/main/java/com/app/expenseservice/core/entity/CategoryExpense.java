@@ -1,29 +1,57 @@
 package com.app.expenseservice.core.entity;
 
 import lombok.Getter;
-import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
 @Getter
-@Setter
 public class CategoryExpense {
-    private UUID id;
+    private final UUID id;
     private String name;
     private String icon;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private final LocalDateTime createdAt;
+    private final LocalDateTime updatedAt;
+
+    private CategoryExpense(
+            UUID id,
+            String name,
+            String icon,
+            LocalDateTime createdAt,
+            LocalDateTime updatedAt
+    ){
+        this.id = Objects.requireNonNull(id);
+        this.name = Objects.requireNonNull(name);
+        this.icon = Objects.requireNonNull(icon);
+        this.createdAt = Objects.requireNonNull(createdAt);
+        this.updatedAt = Objects.requireNonNull(updatedAt);
+    }
 
     public static CategoryExpense create(String name, String icon){
-        CategoryExpense categoryExpense = new CategoryExpense();
+        return new CategoryExpense(
+                UUID.randomUUID(),
+                name,
+                icon,
+                LocalDateTime.now(),
+                LocalDateTime.now()
+        );
+    }
 
-        categoryExpense.id = UUID.randomUUID();
-        categoryExpense.name = Objects.requireNonNull(name, "Name cannot be null");
-        categoryExpense.icon = Objects.requireNonNull(icon, "Icon cannot be null");
-
-        return categoryExpense;
+    public static CategoryExpense restore(
+            UUID id,
+            String name,
+            String icon,
+            LocalDateTime createdAt,
+            LocalDateTime updatedAt
+    ) {
+        return new CategoryExpense(
+                id,
+                name,
+                icon,
+                createdAt,
+                updatedAt
+        );
     }
 
     public void changeName(String newName){
@@ -38,6 +66,7 @@ public class CategoryExpense {
         if (newIcon == null || newIcon.isBlank()) {
             throw new IllegalArgumentException("New name cannot be blank");
         }
+
         this.icon = newIcon;
     }
 

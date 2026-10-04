@@ -1,0 +1,9 @@
+@id = bc4f32f1-64cf-45fc-b890-6ac1ef31ab96
+
+PUT http://localhost:8081/api/v1/expenses/{{id}}
+Content-Type: application/json
+
+{
+  "name": "test update name",
+  "icon": "test icon"
+}

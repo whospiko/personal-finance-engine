@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "message": "Operation completed successfully",
+  "data": {
+    "id": "bc4f32f1-64cf-45fc-b890-6ac1ef31ab96",
+    "name": "test update name",
+    "icon": "test icon",
+    "created": "2026-10-04T13:44:34.742316",
+    "updated": "2026-10-04T13:45:06.695791"
+  },
+  "timestamp": "2026-10-04T13:46:02.024624"
+}

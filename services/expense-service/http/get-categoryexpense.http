@@ -1,0 +1,3 @@
+@id = bc4f32f1-64cf-45fc-b890-6ac1ef31ab96
+GET http://localhost:8081/api/v1/expenses/{{id}}
+Accept: application/json

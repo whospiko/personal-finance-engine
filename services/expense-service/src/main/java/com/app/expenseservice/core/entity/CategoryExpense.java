@@ -1,12 +1,14 @@
 package com.app.expenseservice.core.entity;
 
 import lombok.Getter;
+import lombok.ToString;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
 @Getter
+@ToString
 public class CategoryExpense {
     private final UUID id;
     private String name;
@@ -55,18 +57,16 @@ public class CategoryExpense {
     }
 
     public void changeName(String newName){
-        if (newName == null || newName.isBlank()) {
-            throw new IllegalArgumentException("New name cannot be blank");
-        }
-
+    if (newName == null || newName.isBlank()) {
+        throw new IllegalArgumentException("New name cannot be blank");
+    }
         this.name = newName;
     }
 
     public void changeIcon(String newIcon){
         if (newIcon == null || newIcon.isBlank()) {
-            throw new IllegalArgumentException("New name cannot be blank");
+            throw new IllegalArgumentException("New icon cannot be blank");
         }
-
         this.icon = newIcon;
     }
 

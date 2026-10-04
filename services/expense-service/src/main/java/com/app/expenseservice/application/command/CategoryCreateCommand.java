@@ -1,6 +1,6 @@
 package com.app.expenseservice.application.command;
 
-public record CategoryExpenseCreateCommand(
+public record CategoryCreateCommand(
         String name,
         String icon
 ) {

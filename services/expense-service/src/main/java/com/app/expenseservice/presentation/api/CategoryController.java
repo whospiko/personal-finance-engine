@@ -5,6 +5,7 @@ import com.app.expenseservice.application.command.CategoryCreateCommand;
 import com.app.expenseservice.application.command.CategoryUpdateCommand;
 import com.app.expenseservice.application.query.CategoryResult;
 import com.app.expenseservice.application.usecase.CreateCategoryUseCase;
+import com.app.expenseservice.application.usecase.GetCategoriesUseCase;
 import com.app.expenseservice.application.usecase.GetCategoryUseCase;
 import com.app.expenseservice.application.usecase.UpdateCategoryUseCase;
 import com.app.expenseservice.presentation.request.CategoryRequest;
@@ -13,6 +14,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -22,6 +24,7 @@ public class CategoryController {
 
     private final CreateCategoryUseCase createCategoryExpenseUseCase;
     private final GetCategoryUseCase getCategoryUseCase;
+    private final GetCategoriesUseCase getCategoriesUseCase;
     private final UpdateCategoryUseCase updateCategoryUseCase;
 
     @PostMapping()
@@ -35,6 +38,12 @@ public class CategoryController {
         ));
 
         return ApiResponse.success(response);
+    }
+
+    @GetMapping()
+    public ApiResponse<List<CategoryResponse>> getAllCategories() {
+        List<CategoryResponse> responses = getCategoriesUseCase.execute();
+        return ApiResponse.success(responses);
     }
 
     @GetMapping("/{id}")

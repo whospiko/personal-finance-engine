@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd35cc9-4e4d-4cda-a8ad-87a2b7c3dcfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/expense-service/http/get-categoryexpense.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/http/update-categoryexpense.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/command/CategoryUpdateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetCategoryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/UpdateCategoryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/UpdateCategoryUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/http/getall-categoryexpense.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetCategoriesHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/GetCategoriesUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-lib/src/main/java/com/app/common/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/src/main/java/com/app/common/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/GetCategoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/GetCategoryUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/CategoryExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/CategoryExpense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/http/create-categoryexpense.http" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/http/create-categoryexpense.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/CategoryExpenseRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/CategoryExpenseRepositoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/CategoryExpensePersistenceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/CategoryExpensePersistenceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/SpringDataJpaCategoryExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/SpringDataJpaCategoryExpenseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/CategoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,28 +29,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="HTTP Public Environment File" />
         <option value="Interface" />
         <option value="Class" />
         <option value="HTTP Request" />
-        <option value="HTTP Public Environment File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "whospiko"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;whospiko&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/whospiko/personal-finance-engine.git",
-    "accountId": "e7c52a44-dc5e-4580-8a52-e34a0d3c6e30"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/whospiko/personal-finance-engine.git&quot;,
+    &quot;accountId&quot;: &quot;e7c52a44-dc5e-4580-8a52-e34a0d3c6e30&quot;
   }
-}]]></component>
+}</component>
   <component name="HttpClientOnboardingState">{
   &quot;isOnboardingCommentShown&quot;: true
 }</component>
@@ -79,6 +71,7 @@
   "keyToString": {
     "HTTP Request.create-categoryexpense | #1.executor": "Run",
     "HTTP Request.get-categoryexpense | #1.executor": "Run",
+    "HTTP Request.getall-categoryexpense | #1.executor": "Run",
     "HTTP Request.update-categoryexpense | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -116,6 +109,7 @@
             <map>
               <entry key="create-categoryexpense | #1" value="STOPPED" />
               <entry key="get-categoryexpense | #1" value="STOPPED" />
+              <entry key="getall-categoryexpense | #1" value="STOPPED" />
               <entry key="update-categoryexpense | #1" value="STOPPED" />
             </map>
           </value>
@@ -128,6 +122,9 @@
       <method v="2" />
     </configuration>
     <configuration name="get-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/get-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="getall-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/getall-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="update-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/update-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
@@ -143,9 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.getall-categoryexpense | #1" />
+        <item itemvalue="HTTP Request.create-categoryexpense | #1" />
         <item itemvalue="HTTP Request.get-categoryexpense | #1" />
         <item itemvalue="HTTP Request.update-categoryexpense | #1" />
-        <item itemvalue="HTTP Request.create-categoryexpense | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +178,9 @@
       <workItem from="1791091040858" duration="116000" />
       <workItem from="1791091174059" duration="1405000" />
       <workItem from="1791092622300" duration="810000" />
-      <workItem from="1791093463193" duration="2914000" />
+      <workItem from="1791093463193" duration="2965000" />
+      <workItem from="1791117110698" duration="156000" />
+      <workItem from="1791117322059" duration="497000" />
     </task>
     <servers />
   </component>

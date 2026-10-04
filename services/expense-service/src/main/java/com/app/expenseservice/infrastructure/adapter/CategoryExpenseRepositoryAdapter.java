@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.logging.LoggingSystemFactory;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -37,5 +38,10 @@ public class CategoryExpenseRepositoryAdapter implements CategoryExpenseReposito
     public Optional<CategoryExpense> findById(UUID id) {
         return categoryExpenseRepository.findById(id)
                 .map(mapper::toDomain);
+    }
+
+    @Override
+    public List<CategoryExpense> findAll() {
+        return categoryExpenseRepository.findAll().stream().map(mapper::toDomain).toList();
     }
 }

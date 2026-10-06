@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.55">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>774</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1074</IntrospectionStateNumber>
       <ServerVersion>18.6</ServerVersion>
-      <StartupTime>1791088420</StartupTime>
+      <StartupTime>1791117168</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -800,7 +800,7 @@ false Zulu
 13699||10|C|G
 13699||-9223372036854775808|U|G
 13699||10|U|G</Grants>
-      <IntrospectionStateNumber>774</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1074</IntrospectionStateNumber>
       <ObjectId>16385</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -816,7 +816,6 @@ false Zulu
 13699||10|C|G
 13699||-9223372036854775808|U|G
 13699||10|U|G</Grants>
-      <IntrospectionStateNumber>754</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>hengkakada</OwnerName>
     </database>
@@ -4337,11 +4336,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>774</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>774</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>774</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>1074</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>1074</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>1074</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-10-04.06:01:21</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-10-06.06:35:27</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
       <ObjectId>2200</ObjectId>
       <StateNumber>545</StateNumber>
@@ -7789,9 +7788,6 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>754</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>754</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>754</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
       <LastIntrospectionLocalTimestamp>2026-10-04.04:35:29</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>260210</LastIntrospectionVersion>
@@ -7801,59 +7797,135 @@ false Zulu
     </schema>
     <table id="524" parent="273" name="category_expense">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16418</ObjectId>
-      <StateNumber>772</StateNumber>
+      <ObjectId>17305</ObjectId>
+      <StateNumber>1070</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="525" parent="524" name="created_at">
+    <table id="525" parent="273" name="expenses">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>17313</ObjectId>
+      <StateNumber>1070</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="526" parent="524" name="created_at">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>772</StateNumber>
+      <StateNumber>1068</StateNumber>
       <StoredType>timestamp(6)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="526" parent="524" name="updated_at">
+    <column id="527" parent="524" name="updated_at">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>772</StateNumber>
+      <StateNumber>1068</StateNumber>
       <StoredType>timestamp(6)|0s</StoredType>
       <TypeId>1114</TypeId>
     </column>
-    <column id="527" parent="524" name="id">
+    <column id="528" parent="524" name="id">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>772</StateNumber>
+      <StateNumber>1068</StateNumber>
       <StoredType>uuid|0s</StoredType>
       <TypeId>2950</TypeId>
     </column>
-    <column id="528" parent="524" name="icon">
+    <column id="529" parent="524" name="icon">
       <Position>4</Position>
-      <StateNumber>772</StateNumber>
+      <StateNumber>1068</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="529" parent="524" name="name">
+    <column id="530" parent="524" name="name">
       <Position>5</Position>
-      <StateNumber>772</StateNumber>
+      <StateNumber>1068</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="530" parent="524" name="category_expense_pkey">
+    <index id="531" parent="524" name="category_expense_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16424</ObjectId>
+      <ObjectId>17311</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>772</StateNumber>
+      <StateNumber>1068</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="531" parent="524" name="category_expense_pkey">
+    <key id="532" parent="524" name="category_expense_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16425</ObjectId>
+      <ObjectId>17312</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>772</StateNumber>
-      <UnderlyingIndexId>16424</UnderlyingIndexId>
+      <StateNumber>1068</StateNumber>
+      <UnderlyingIndexId>17311</UnderlyingIndexId>
+    </key>
+    <column id="533" parent="525" name="amount">
+      <Position>1</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="534" parent="525" name="created_at">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="535" parent="525" name="transection_date">
+      <Position>3</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="536" parent="525" name="updated_at">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>timestamp(6)|0s</StoredType>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="537" parent="525" name="category_expense_id">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="538" parent="525" name="id">
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="539" parent="525" name="note">
+      <Position>7</Position>
+      <StateNumber>1069</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="540" parent="525" name="fkkkb8fx3mlv8ftt9megam92t1u">
+      <ColNames>category_expense_id</ColNames>
+      <ObjectId>17322</ObjectId>
+      <StateNumber>1070</StateNumber>
+      <RefKeyColPositions>3</RefKeyColPositions>
+      <RefTableId>17305</RefTableId>
+    </foreign-key>
+    <index id="541" parent="525" name="expenses_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17320</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1069</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="542" parent="525" name="expenses_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17321</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1069</StateNumber>
+      <UnderlyingIndexId>17320</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

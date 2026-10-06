@@ -4,8 +4,8 @@ import com.app.common.exception.NotFoundException;
 import com.app.expenseservice.application.command.CategoryUpdateCommand;
 import com.app.expenseservice.application.mapper.CategoryAppMapper;
 import com.app.expenseservice.application.usecase.UpdateCategoryUseCase;
-import com.app.expenseservice.core.entity.CategoryExpense;
-import com.app.expenseservice.core.repository.CategoryExpenseRepository;
+import com.app.expenseservice.core.entity.Category;
+import com.app.expenseservice.core.repository.CategoryRepository;
 import com.app.expenseservice.presentation.response.CategoryResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 @Slf4j
 public class UpdateCategoryHandler implements UpdateCategoryUseCase {
-    private final CategoryExpenseRepository categoryExpenseRepository;
+    private final CategoryRepository categoryRepository;
     private final CategoryAppMapper mapper;
     private final Logger logger =  LoggerFactory.getLogger(UpdateCategoryHandler.class);
 
@@ -26,26 +26,26 @@ public class UpdateCategoryHandler implements UpdateCategoryUseCase {
     @Override
     public CategoryResponse execute(CategoryUpdateCommand command) {
         // Fetch existing domain entity via repository adapter
-        CategoryExpense categoryExpense = categoryExpenseRepository.findById(command.id())
+        Category category = categoryRepository.findById(command.id())
                 .orElseThrow(() -> new NotFoundException("CategoryExpense not found with id: " + command.id()));
 
-        logger.info("Update category expense: {}", categoryExpense);
+        logger.info("Update category expense: {}", category);
 
         // Apply domain mutations
-        if (!categoryExpense.getName().equals(command.name())) {
-            categoryExpense.changeName(command.name());
-            logger.info("Update category expense name: {}", categoryExpense.getName());
+        if (!category.getName().equals(command.name())) {
+            category.changeName(command.name());
+            logger.info("Update category expense name: {}", category.getName());
         }
 
-        if (!categoryExpense.getIcon().equals(command.icon())) {
-            categoryExpense.changeIcon(command.icon());
-            logger.info("Update category expense icon: {}", categoryExpense.getIcon());
+        if (!category.getIcon().equals(command.icon())) {
+            category.changeIcon(command.icon());
+            logger.info("Update category expense icon: {}", category.getIcon());
         }
 
-        logger.info("Updated category expense: {}", categoryExpense.toString());
+        logger.info("Updated category expense: {}", category.toString());
 
         // Save domain entity (updates existing attached/persisted entity in adapter)
-        CategoryExpense updatedCategory = categoryExpenseRepository.save(categoryExpense);
+        Category updatedCategory = categoryRepository.save(category);
 
         logger.info("Updated category expense from database: {}", updatedCategory);
 

@@ -12,7 +12,7 @@ public class Expense {
     private Double amount;
     private String note;
     private LocalDateTime transactionDate;
-    private final CategoryExpense category; // Aggregate Category info inside Expense
+    private final Category category; // Aggregate Category info inside Expense
     private final LocalDateTime createdAt;
     private final LocalDateTime updatedAt;
 
@@ -21,7 +21,7 @@ public class Expense {
             Double amount,
             String note,
             LocalDateTime transactionDate,
-            CategoryExpense category,
+            Category category,
             LocalDateTime createdAt,
             LocalDateTime updatedAt
     ) {
@@ -37,7 +37,7 @@ public class Expense {
         this.updatedAt = Objects.requireNonNull(updatedAt);
     }
 
-    public static Expense create(Double amount, String note, CategoryExpense category) {
+    public static Expense create(Double amount, String note, Category category) {
         LocalDateTime now = LocalDateTime.now();
         return new Expense(
                 UUID.randomUUID(),
@@ -55,7 +55,7 @@ public class Expense {
             Double amount,
             String note,
             LocalDateTime transactionDate,
-            CategoryExpense category,
+            Category category,
             LocalDateTime createdAt,
             LocalDateTime updatedAt
     ) {

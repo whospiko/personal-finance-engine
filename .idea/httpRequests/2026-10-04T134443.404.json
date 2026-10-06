@@ -1,7 +1,0 @@
-{
-  "status": 404,
-  "error": "Not Found",
-  "message": "Category not found",
-  "path": "/api/v1/expenses/9e3ebff0-0a72-41bb-b1d3-baf12f4c8370",
-  "timestamp": "2026-10-04T13:44:43.494836"
-}

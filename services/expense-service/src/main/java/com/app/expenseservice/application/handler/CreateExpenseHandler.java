@@ -4,9 +4,9 @@ import com.app.common.exception.NotFoundException;
 import com.app.expenseservice.application.command.CreateExpenseCommand;
 import com.app.expenseservice.application.mapper.ExpenseAppMapper;
 import com.app.expenseservice.application.usecase.CreateExpenseUseCase;
-import com.app.expenseservice.core.entity.CategoryExpense;
+import com.app.expenseservice.core.entity.Category;
 import com.app.expenseservice.core.entity.Expense;
-import com.app.expenseservice.core.repository.CategoryExpenseRepository;
+import com.app.expenseservice.core.repository.CategoryRepository;
 import com.app.expenseservice.core.repository.ExpenseRepository;
 import com.app.expenseservice.presentation.response.ExpenseResponse;
 import lombok.RequiredArgsConstructor;
@@ -20,14 +20,14 @@ import org.springframework.transaction.annotation.Transactional;
 public class CreateExpenseHandler implements CreateExpenseUseCase {
 
     private final ExpenseRepository expenseRepository;
-    private final CategoryExpenseRepository categoryExpenseRepository;
+    private final CategoryRepository categoryRepository;
     private final ExpenseAppMapper expenseAppMapper;
 
     @Override
     @Transactional
     public ExpenseResponse execute(CreateExpenseCommand command) {
 
-        CategoryExpense category = categoryExpenseRepository.findById(command.categoryId())
+        Category category = categoryRepository.findById(command.categoryId())
                 .orElseThrow(() -> new NotFoundException("Category not found"));
 
         Expense expense = Expense.create(

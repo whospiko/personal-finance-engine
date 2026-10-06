@@ -2,11 +2,11 @@ package com.app.expenseservice.infrastructure.adapter;
 
 import com.app.expenseservice.core.entity.Expense;
 import com.app.expenseservice.core.repository.ExpenseRepository;
-import com.app.expenseservice.infrastructure.mapper.ExpenseMapper;
+import com.app.expenseservice.infrastructure.mapper.ExpensePersistenceMapper;
 import com.app.expenseservice.infrastructure.persistence.CategoryExpenseJpaEntity;
 import com.app.expenseservice.infrastructure.persistence.ExpenseJpaEntity;
 import com.app.expenseservice.infrastructure.persistence.SpringDataExpenseRepository;
-import com.app.expenseservice.infrastructure.persistence.SpringDataJpaCategoryExpenseRepository;
+import com.app.expenseservice.infrastructure.persistence.SpringDataJpaCategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
@@ -18,8 +18,8 @@ import java.util.UUID;
 public class ExpenseRepositoryAdapter implements ExpenseRepository {
 
     private final SpringDataExpenseRepository jpaExpenseRepository;
-    private final SpringDataJpaCategoryExpenseRepository jpaCategoryRepository;
-    private final ExpenseMapper expenseMapper;
+    private final SpringDataJpaCategoryRepository jpaCategoryRepository;
+    private final ExpensePersistenceMapper expenseMapper;
 
     @Override
     public Expense save(Expense domainExpense) {

@@ -1,0 +1,29 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: budget-service
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/budget_db}
+    username: ${JDBC_DATABASE_USERNAME:}
+    password: ${JDBC_DATABASE_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,prometheus"
+  endpoint:
+    health:
+      show-details: always
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs

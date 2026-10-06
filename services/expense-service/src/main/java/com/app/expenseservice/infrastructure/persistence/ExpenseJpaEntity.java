@@ -1,7 +1,6 @@
 package com.app.expenseservice.infrastructure.persistence;
 
 import com.app.common.entity.BaseEntity;
-import com.app.expenseservice.core.entity.CategoryExpense;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,7 +1,0 @@
-{
-  "status": 500,
-  "error": "Internal Server Error",
-  "message": "An unexpected error occurred: null",
-  "path": "/api/v1/expenses/74354da4-f1bb-471f-be29-e8deb0a0b84d",
-  "timestamp": "2026-10-04T13:20:01.913469"
-}

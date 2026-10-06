@@ -4,46 +4,124 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd35cc9-4e4d-4cda-a8ad-87a2b7c3dcfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/command/CreateExpenseCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/CreateExpenseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/mapper/ExpenseAppMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/CreateExpenseUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/ExpenseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/ExpenseRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/ExpenseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/ExpenseJpaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/SpringDataExpenseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/ExpenseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/request/ExpenseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/response/ExpenseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6686bf02-1d90-4370-b35e-968f2e9c7c70" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/budget-db.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/BudgetServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/core/domain/Budget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/core/domain/BudgetPeriod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/core/domain/BudgetSpending.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/infrastructure/client/ExpenseServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/infrastructure/persistence/BudgetJpaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/infrastructure/persistence/BudgetSpendingJpaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/java/com/app/budgetservice/presentation/api/BudgetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/budget-service/src/main/resources/application.example.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/ExistCategoryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetExpenseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/query/ExpenseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/ExistCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/usecase/GetExpenseUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/CategoryInternalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/expense_db.xamf9A/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b392b139-cf6f-49ac-82ef-c4b616f8ac58/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T123326.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T123409.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T123817.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T123926.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T123944.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T130048.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T130059.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T131819.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T131927.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132001.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132040.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132043.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132046.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132047.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132316.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132328.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132331.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132355.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132402.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132733.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132745.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132746.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T132753.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T133103.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T133124.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T133131.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T133708.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T133722.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T133727.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134135.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134152.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134159.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134434.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134443.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134452.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134506.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134521.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134526.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134528.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134550.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134554.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134602.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134603.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T134606.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T194246.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T194250.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T194252.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T194254.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T194329.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-04T194341.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-lib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-lib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/expense-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/CategoryExpenseJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/CategoryExpenseJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/CreateCategoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/CreateCategoryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/CreateExpenseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/CreateExpenseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetCategoriesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetCategoriesHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetCategoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/GetCategoryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/UpdateCategoryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/handler/UpdateCategoryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/mapper/CategoryAppMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/application/mapper/CategoryAppMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/CategoryExpense.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/entity/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/core/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/CategoryExpenseRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/CategoryExpenseRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/ExpenseRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/adapter/ExpenseRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/CategoryExpensePersistenceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/CategoryPersistenceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/ExpenseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/mapper/ExpensePersistenceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/ExpenseJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/ExpenseJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/SpringDataJpaCategoryExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/infrastructure/persistence/SpringDataJpaCategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/resources/application.example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/resources/application.example.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/ExpenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/expense-service/src/main/java/com/app/expenseservice/presentation/api/ExpenseController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseLocalColorSettings">
-    <colors>
-      <entry key="b392b139-cf6f-49ac-82ef-c4b616f8ac58" value="" />
-    </colors>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTTP Public Environment File" />
-        <option value="HTTP Request" />
-        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
       </list>
@@ -64,14 +142,11 @@
     &quot;accountId&quot;: &quot;e7c52a44-dc5e-4580-8a52-e34a0d3c6e30&quot;
   }
 }</component>
-  <component name="HttpClientOnboardingState">{
-  &quot;isOnboardingCommentShown&quot;: true
-}</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0,
-  &quot;fromUser&quot;: false
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="3KDLWfPHZfQmBUi07E7k8gOZpPj" />
+  <component name="ProjectId" id="3KJZUJ1g3bfsPZ0ZKJljppCA8eL" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -82,10 +157,6 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;HTTP Request.create-categoryexpense | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.get-categoryexpense | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.getall-categoryexpense | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.update-categoryexpense | #1.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -94,59 +165,28 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BudgetServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ExpenseServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hengkakada/Project/personal-finance-engine/services/expense-service/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/services/expense-service/src/main/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.app.expenseservice.presentation.request" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationStatuses">
-      <map>
-        <entry key="HttpClient.HttpRequestRunConfigurationType">
-          <value>
-            <map>
-              <entry key="create-categoryexpense | #1" value="STOPPED" />
-              <entry key="get-categoryexpense | #1" value="STOPPED" />
-              <entry key="getall-categoryexpense | #1" value="STOPPED" />
-              <entry key="update-categoryexpense | #1" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.ExpenseServiceApplication">
-    <configuration name="create-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/create-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="get-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/get-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="getall-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/getall-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="update-categoryexpense | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/services/expense-service/http/update-categoryexpense.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
+  <component name="RunManager" selected="Spring Boot.BudgetServiceApplication">
+    <configuration name="BudgetServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/opt/homebrew/Cellar/openjdk@25/25.0.4/libexec/openjdk.jdk/Contents/Home" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="budget-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.budgetservice.BudgetServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ExpenseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="expense-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.expenseservice.ExpenseServiceApplication" />
@@ -154,14 +194,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.getall-categoryexpense | #1" />
-        <item itemvalue="HTTP Request.create-categoryexpense | #1" />
-        <item itemvalue="HTTP Request.get-categoryexpense | #1" />
-        <item itemvalue="HTTP Request.update-categoryexpense | #1" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Spring Boot.BudgetServiceApplication" />
+      <item itemvalue="Spring Boot.ExpenseServiceApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -173,42 +209,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1cd35cc9-4e4d-4cda-a8ad-87a2b7c3dcfd" name="Changes" comment="" />
-      <created>1791087225080</created>
+      <changelist id="6686bf02-1d90-4370-b35e-968f2e9c7c70" name="Changes" comment="" />
+      <created>1791277646554</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1791087225080</updated>
-      <workItem from="1791087226194" duration="81000" />
-      <workItem from="1791087316878" duration="119000" />
-      <workItem from="1791087438781" duration="9000" />
-      <workItem from="1791087473275" duration="165000" />
-      <workItem from="1791087656083" duration="972000" />
-      <workItem from="1791089501459" duration="85000" />
-      <workItem from="1791089624631" duration="106000" />
-      <workItem from="1791089765050" duration="69000" />
-      <workItem from="1791089865541" duration="320000" />
-      <workItem from="1791090220330" duration="77000" />
-      <workItem from="1791090308835" duration="283000" />
-      <workItem from="1791090626444" duration="172000" />
-      <workItem from="1791090898488" duration="121000" />
-      <workItem from="1791091040858" duration="116000" />
-      <workItem from="1791091174059" duration="1405000" />
-      <workItem from="1791092622300" duration="810000" />
-      <workItem from="1791093463193" duration="2965000" />
-      <workItem from="1791117110698" duration="156000" />
-      <workItem from="1791117322059" duration="1066000" />
-      <workItem from="1791183322548" duration="111000" />
-      <workItem from="1791264122546" duration="686000" />
-      <workItem from="1791264908523" duration="2392000" />
-      <workItem from="1791267350911" duration="1145000" />
+      <updated>1791277646554</updated>
+      <workItem from="1791277647715" duration="220000" />
+      <workItem from="1791277903354" duration="141000" />
+      <workItem from="1791278046939" duration="724000" />
+      <workItem from="1791285784736" duration="4028000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

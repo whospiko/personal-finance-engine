@@ -19,6 +19,7 @@
             <node kind="database" qname="expense_db">
               <node kind="schema" qname="public" />
             </node>
+            <node kind="database" qname="budget_db" />
           </node>
         </introspection-scope>
       </schema-mapping>
